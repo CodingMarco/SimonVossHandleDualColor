@@ -1,10 +1,10 @@
-rotate(36) import("griff.stl", convexity=3);
+rotate(0) import("griff.stl", convexity=3);
 
 difference()
 {
-    r = 15;
+    r = 23;
 //import("griff.stl", convexity=3);
-translate([0, r, 0]) for (i=[0 : 300 : 2000]) translate([0, -r, 0]) rotate(i) translate([0, r, 0]) rotate(-20) cube(13);
+translate([0, r, 5]) for (i=[0 : 300 : 2000]) translate([0, -r, 0]) rotate(i) translate([0, r, 0]) rotate(-20) #sphere(9);
 }
 
 
